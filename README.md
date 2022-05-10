@@ -123,8 +123,6 @@ Aqui vai uma lista com os principais, ou praticamente todos, os comandos apresen
   git stash
 ```
 
-----------
-
 ## Autor
 
 - [@Jphn](https://www.github.com/Jphn)
