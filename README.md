@@ -21,11 +21,11 @@ Aqui vai uma lista com os principais, ou praticamente todos, os comandos apresen
 
 **Inicializar o repositório.**
 
+> Caso o repositória já tenha sido inicializado o comando ira notificar o usuário.
+
 ```sh
   git init
 ```
-
-> Apresentará uma mensagem caso o repositório já tenha sido inicializado.
 
 **Mostrar o status do repositório atual.**
 
@@ -35,19 +35,19 @@ Aqui vai uma lista com os principais, ou praticamente todos, os comandos apresen
 
 **Adicionar uma determinada alteração na lista de alterações preparadas.**
 
+> Utilize um ponto no campo nome para adicionar todas as alterações na lista.
+
 ```sh
   git add <nome>
 ```
 
-> Utilize um ponto no campo nome para adicionar todas as alterações na lista.
-
 **Remover uma ou mais alterações da lista de alterações preparadas.**
+
+> Adicione o **-r** antes do **--cached** para remover todas as alterações da lista.
 
 ```sh
   git rm --cached <nome>
 ```
-
-> Adicione o **-r** antes do **--cached** para remover todas as alterações da lista.
 
 **Enviar todas as alterações preparadas com uma mensagem escrita pelo usuário.**
 
@@ -83,11 +83,11 @@ Aqui vai uma lista com os principais, ou praticamente todos, os comandos apresen
 
 **Mudar para a branch selecionada.**
 
+> Adicione o **-b** antes do nome da branch caso a branch em questão ainda não exista. O Git irá cria a branch e mudar para ela logo em seguida.
+
 ```sh
   git checkout <nome>
 ```
-
-> Adicione o **-b** antes do nome da branch para criar uma branch e mudar para ela.
 
 **Mesclar a branch selecionada com a branch atual.**
 
