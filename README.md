@@ -6,7 +6,7 @@
 
 Aqui vai uma lista com os principais, ou praticamente todos, os comandos apresentados durante o módulo de Git e Github lecionado pelo professor Régis Santos.
 
-> **OBS.:** Todos os campos a serem preenchidos pelo usuário devem estar entre aspas duplas.
+> **OBS.:** Os sinais de maior que e menor que são meramente ilustrativos e não devem ser inclusos. Todos os dados inseridos pelo usuário devem estar entre aspas duplas, exceto no caso de pontos literais. **Ex.:** ```git commit -m "mensagem"```
 
 ----------
 
@@ -43,19 +43,23 @@ Aqui vai uma lista com os principais, ou praticamente todos, os comandos apresen
 
 **Remover uma ou mais alterações da lista de alterações preparadas.**
 
-> Adicione o **-r** antes do **--cached** para remover todas as alterações da lista.
+> Adicione o **```-r```** antes do **```--cached```** para remover todas as alterações da lista.
 
 ```sh
   git rm --cached <nome>
 ```
 
-**Enviar todas as alterações preparadas com uma mensagem escrita pelo usuário.**
+**Preparar todas as alterações na lista com uma mensagem escrita pelo usuário.**
+
+> Caso o usuário não esteja em um repositório compartilhado as alterações serão preparadas e automaticamente enviadas. Senão, será necessário utilizar o **```push```**.
 
 ```sh
   git commit -m <mensagem>
 ```
 
 **Mostrar o log de todos os commits feitos.**
+
+> Adicione o **```--oneline```** para facilitar a visualização das informações.
 
 ```sh
   git log
@@ -83,7 +87,7 @@ Aqui vai uma lista com os principais, ou praticamente todos, os comandos apresen
 
 **Mudar para a branch selecionada.**
 
-> Adicione o **-b** antes do nome da branch caso a branch em questão ainda não exista. O Git irá cria a branch e mudar para ela logo em seguida.
+> Adicione o **```-b```** antes do nome da branch caso a branch em questão ainda não exista. O Git irá cria a branch e mudar para ela logo em seguida.
 
 ```sh
   git checkout <nome>
@@ -100,13 +104,19 @@ Aqui vai uma lista com os principais, ou praticamente todos, os comandos apresen
 **Gerar uma chave SSH para linkar Git e Github.**
 
 ```sh
-  ssh-keygen -t ed25519 -C <nome>
+  ssh-keygen -t ed25519 -C <email>
 ```
 
 **Clonar um repositório existente.**
 
 ```sh
   git clone <endereço>
+```
+
+**Sincronizar as informações do repositório local com as do remoto.**
+
+```sh
+  git pull 
 ```
 
 **Atualizar o repositório remoto com as alterações locais.**
@@ -119,15 +129,43 @@ Aqui vai uma lista com os principais, ou praticamente todos, os comandos apresen
 
 **Guardar alterações não concluidas como rascunho.**
 
+> Adicione a opção **```--include-untracked```** para incluir novos arquivos.
+
 ```sh
   git stash
+```
+
+**Mostar lista de stashes salvos.**
+
+```sh
+  git stash list
+```
+
+**Retomar stash.**
+
+> Especifique a stash após o pop para retomar a stash específica. Da seguinte forma **```git stash pop <stash>```**.
+
+```sh
+  git stash pop
+```
+
+**Reverter commits feitos.**
+
+> Adicione o **```<commit>```** para especificar o commit a ser revertido.
+
+```sh
+  git revert
+```
+
+**Mostrar as diferenças entre as branchs.**
+
+```sh
+  git diff
 ```
 
 ## Autor
 
 - [@Jphn](https://www.github.com/Jphn)
-
-----------
 
 [![beAcademy](https://www.beacademy.com.br/wp-content/uploads/2019/11/Logo-Topo.png)](https://www.beacademy.com.br/)
 
