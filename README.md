@@ -1,6 +1,6 @@
-# Git e Github - DevStart
+<a href="https://www.beacademy.com.br/devstartpaylivre/" target="_blank"><img src="https://www.beacademy.com.br/wp-content/uploads/2022/02/Cubo.png" align="right" width="60"/></a>
 
-[![devstart](https://www.beacademy.com.br/wp-content/uploads/2022/02/Cubo.png)](https://www.beacademy.com.br/devstartpaylivre/)
+# Git e Github - DevStart
 
 ## Comandos
 
